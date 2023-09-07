@@ -11,7 +11,7 @@ const AvailableMeals = () => {
 	useEffect(() => {
 		const fetchMeals = async () => {
 			const response = await fetch(
-				"https://section-13-79b2e-default-rtdb.firebaseio.com/"
+				"https://section-13-79b2e-default-rtdb.firebaseio.com/meals.json"
 			);
 
 			if (!response.ok) {
@@ -45,7 +45,7 @@ const AvailableMeals = () => {
 	if (isLoading) {
 		return (
 			<section className={classes.MealsLoading}>
-				<p>Loading...1</p>
+				<p>Loading...</p>
 			</section>
 		);
 	}
